@@ -1,343 +1,334 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مكتب أبو محمد للتعقيب والمعاملات</title>
 
-<title>هاني بن عبدالله | خدمات تصاريح الزواج والمعاملات الرسمية</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<meta name="description" content="هاني بن عبدالله – مكتب خدمات متخصص في تصاريح الزواج، التجنيس، المعاملات الحكومية، والاستشارات النظامية. تواصل واتساب مباشر.">
-<meta name="keywords" content="تصاريح زواج, تصريح زواج سعودي, تجنيس, معاملات حكومية, مكتب خدمات, هاني بن عبدالله">
-<meta name="author" content="هاني بن عبدالله">
-<meta name="robots" content="index, follow">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-<!-- Open Graph -->
-<meta property="og:title" content="هاني بن عبدالله | خدمات ومعاملات رسمية">
-<meta property="og:description" content="إنجاز تصاريح الزواج والتجنيس والمعاملات الرسمية بسرعة واحترافية">
-<meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
-body{background:#f4f6f5;color:#222;line-height:1.9;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
-img{-webkit-user-drag: none; user-drag: none; pointer-events: none;}
-
-/* HEADER */
-header{
-background:#0f3d2e;
-color:#fff;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:999;
-}
-header h1{font-size:22px;font-weight:800}
-header a{
-background:#25D366;
-color:#fff;
-padding:12px 22px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold
-}
-
-/* HERO */
-.hero{height:95vh;position:relative;overflow:hidden}
-.hero img{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-animation:hero 18s infinite;
-}
-.hero img:nth-child(2){animation-delay:6s}
-.hero img:nth-child(3){animation-delay:12s}
-
-.hero::after{
-content:'';
-position:absolute;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,.65);
-}
-
-@keyframes hero{
-0%{opacity:0}
-10%{opacity:1}
-30%{opacity:1}
-40%{opacity:0}
-100%{opacity:0}
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:#fff;
-padding:20px;
-}
-.hero-content h2{font-size:48px;margin-bottom:20px}
-.hero-content p{font-size:22px;max-width:900px;margin-bottom:30px}
-.hero-content a{
-background:#25D366;
-padding:18px 42px;
-border-radius:45px;
-color:#fff;
-font-size:20px;
-font-weight:bold;
-text-decoration:none
-}
-
-/* SECTIONS */
-section{padding:85px 20px;max-width:1300px;margin:auto}
-section h3{
-text-align:center;
-font-size:36px;
-margin-bottom:55px;
-color:#0f3d2e
-}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:35px
-}
-.service{
-background:#fff;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-transition:.4s
-}
-.service:hover{transform:translateY(-12px)}
-.service img{width:100%;height:260px;object-fit:cover}
-.service div{padding:28px}
-.service h4{font-size:22px;margin-bottom:12px;color:#0f3d2e}
-.service p{font-size:16px;line-height:1.7;color:#333}
-
-/* STATS */
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-text-align:center
-}
-.stats div{
-background:#0f3d2e;
-color:#fff;
-padding:40px;
-border-radius:20px
-}
-.stats h4{font-size:38px;margin-bottom:10px}
-
-/* WHY */
-.why{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-text-align:center
-}
-.why div{
-background:#fff;
-padding:35px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.07)
-}
-.why i{font-size:42px;color:#0f3d2e;margin-bottom:15px}
-
-/* TESTIMONIALS */
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px
-}
-.testimonial{
-background:#0f3d2e;
-color:#fff;
-padding:35px;
-border-radius:20px;
-position:relative
-}
-.testimonial::before{
-content:'“';
-font-size:60px;
-position:absolute;
-top:10px;
-right:20px;
-opacity:.2
-}
-
-/* GALLERY */
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px
-}
-.gallery img{
-width:100%;
-border-radius:20px;
-transition:.4s
-}
-.gallery img:hover{transform:scale(1.06)}
-
-/* CONTACT */
-.contact{
-background:#0f3d2e;
-color:#fff;
-text-align:center;
-border-radius:30px;
-padding:80px 20px
-}
-.contact a{
-margin-top:30px;
-display:inline-block;
-background:#25D366;
-padding:20px 50px;
-border-radius:50px;
-font-size:22px;
-color:#fff;
-text-decoration:none;
-font-weight:bold
-}
-
-/* FOOTER */
-footer{
-background:#111;
-color:#bbb;
-text-align:center;
-padding:35px;
-margin-top:80px
-}
-
-/* FLOAT WHATSAPP */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-left:20px;
-background:#25D366;
-color:#fff;
-padding:15px 18px;
-border-radius:50%;
-font-size:28px;
-z-index:999;
-text-decoration:none
-}
-</style>
-
-<script>
-document.addEventListener('contextmenu', e => e.preventDefault()); // منع الزر الأيمن
-document.addEventListener('selectstart', e => e.preventDefault()); // منع تحديد النصوص
-document.addEventListener('copy', e => e.preventDefault()); // منع النسخ
-document.addEventListener('dragstart', e => e.preventDefault()); // منع سحب العناصر
-</script>
-
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-<header>
-<h1>هاني بن عبدالله</h1>
-<a href="https://wa.me/966547392519" target="_blank">
-<i class="fab fa-whatsapp"></i> واتساب
-</a>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
 
-<div class="hero">
-<img src="slide1.jpg" alt="تصاريح زواج">
-<img src="slide2.jpg" alt="معاملات رسمية">
-<img src="slide3.jpg" alt="التجنيس">
+      <div class="logo">
+        <h2>مكتب أبو محمد للتعقيب</h2>
+      </div>
 
-<div class="hero-content">
-<h2>خدمات رسمية بثقة واحتراف</h2>
-<p>إنجاز تصاريح الزواج، التجنيس، والمعاملات الحكومية بأعلى معايير الموثوقية والسرعة</p>
-<a href="https://wa.me/966547392519" target="_blank">تواصل واتساب الآن</a>
-</div>
-</div>
+      <nav class="navbar" id="navbar">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">المعرض</a>
+        <a href="#partners">شركاء النجاح</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
 
-<section>
-<h3>خدماتنا</h3>
-<div class="services">
-  <div class="service">
-    <img src="service1.jpg">
-    <div>
-      <h4>تصاريح الزواج</h4>
-      <p>نقوم بمتابعة وإنهاء تصاريح الزواج داخل وخارج المملكة بشكل كامل، بدءًا من تجهيز المستندات اللازمة، وتقديم الطلبات الرسمية، وحتى الحصول على الموافقة النهائية بسرعة واحترافية عالية، مع الحرص على السرية التامة ومراعاة جميع الإجراءات القانونية والتأكد من صحة جميع المستندات لتجنب أي تأخير.</p>
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
     </div>
-  </div>
-  <div class="service">
-    <img src="service2.jpg">
-    <div>
-      <h4>التجنيس</h4>
-      <p>نقدم استشارات ومتابعة شاملة لجميع معاملات التجنيس وفق الأنظمة المعمول بها، بداية من إعداد الملفات المطلوبة، وتقديم الطلبات إلى الجهات المختصة، وصولاً إلى الحصول على الموافقات الرسمية، مع مراعاة التوجيه القانوني الكامل لضمان إتمام المعاملة دون أي تأخير، مع متابعة كل خطوة حتى تسليم الوثائق النهائية.</p>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="home">
+
+    <div class="slide active">
+      <img src="1002244729.webp" alt="">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>سرعة في الإنجاز .. ثقة مطلقة</h1>
+        <p>حلول احترافية في التعقيب وإنجاز المعاملات الحكومية والخدمات العامة.</p>
+        <a href="#services" class="hero-btn">استعرض خدماتنا</a>
+      </div>
     </div>
-  </div>
-  <div class="service">
-    <img src="service3.jpg">
-    <div>
-      <h4>المعاملات الحكومية</h4>
-      <p>ننجز جميع المعاملات الحكومية الرسمية بسرعة ودقة عالية، مع متابعة جميع الخطوات الإدارية المطلوبة، وتقديم استشارات عملية لضمان إتمام المعاملة بشكل نظامي وآمن، وتوفير الوقت والجهد للعملاء مع الالتزام بأعلى معايير الموثوقية والشفافية، مع تقديم الدعم الكامل عند أي استفسار.</p>
+
+    <div class="slide">
+      <img src="1002244538.jpg" alt="">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>خبرة طويلة في إنهاء المعاملات</h1>
+        <p>فريق عمل احترافي يتابع طلباتك بدقة وسرعة عالية.</p>
+        <a href="#contact" class="hero-btn">تواصل معنا</a>
+      </div>
     </div>
-  </div>
-</div>
-</section>
 
-<section>
-<h3>أرقامنا تتحدث</h3>
-<div class="stats">
-<div><h4>+500</h4><p>معاملة منجزة</p></div>
-<div><h4>+10</h4><p>سنوات خبرة</p></div>
-<div><h4>98%</h4><p>رضا العملاء</p></div>
-</div>
-</section>
+    <div class="slide">
+      <img src="1002244735.webp" alt="">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>خدمات موثوقة بأعلى مستوى</h1>
+        <p>نرافقك حتى اكتمال المعاملة بكل احترافية وأمان.</p>
+        <a href="#order-form" class="hero-btn">اطلب خدمتك الآن</a>
+      </div>
+    </div>
 
-<section>
-<h3>آراء العملاء</h3>
-<div class="testimonials">
-<div class="testimonial">تعامل راقٍ وسرعة غير متوقعة في الإنجاز.</div>
-<div class="testimonial">ثقة ومصداقية، أنصح بالتعامل.</div>
-<div class="testimonial">خدمة ممتازة ومتابعة مستمرة.</div>
-</div>
-</section>
+  </section>
 
-<section>
-<h3>معرض الصور</h3>
-<div class="gallery">
-<img src="slide1.jpg">
-<img src="slide2.jpg">
-<img src="slide3.jpg">
-<img src="service1.jpg">
-<img src="service2.jpg">
-<img src="service3.jpg">
-</div>
-</section>
+  <!-- COUNTER -->
+  <section class="counter-section">
+    <div class="container counter-grid">
 
-<section class="contact">
-<h3>تواصل معنا الآن</h3>
-<p>نحن جاهزون لخدمتك والرد على استفساراتك</p>
-<a href="https://wa.me/966547392519" target="_blank">
-<i class="fab fa-whatsapp"></i> واتساب مباشر
-</a>
-</section>
+      <div class="counter-box">
+        <h2>+10</h2>
+        <p>سنوات خبرة</p>
+      </div>
 
-<footer>
-© 2026 هاني بن عبدالله – جميع الحقوق محفوظة
-</footer>
+      <div class="counter-box">
+        <h2>+5000</h2>
+        <p>معاملة منجزة</p>
+      </div>
 
-<a class="whatsapp-float" href="https://wa.me/966547392519" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
+      <div class="counter-box">
+        <h2>100%</h2>
+        <p>رضا العملاء</p>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-container">
+
+      <div class="about-image">
+        <img src="1002244732.jpg" alt="">
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">من نحن</span>
+     <h2>عن مكتب أبو محمد لمعاملات الزواج واستخراج الجنسية السعودية</h2>
+
+        <p>
+          في مكتب أبو محمد لخدمات التعقيب في السعودية نتفهم أهمية اللحظات المصيرية في حياتكم. لذا نقدم لكم حلولا متكاملة لإنجاز معاملات الزواج الشرعية بكل يسر ودقة بما في ذلك الحصول على تصاريح الزواج الموثوقة، مع التزام تام بالأنظمة والقوانين المحلية. نقدم أيضا دعما متخصصا في جميع معاملات التجنيس، لمساعدتكم في تحقيق الاستقرار والانتماء. بالإضافة إلى ذلك نسهل عليكم عناء معاملات التأشيرات المتنوعة, مكتب تخليص معاملات الزواج في السعودية ابو محمد خيارك الافضل للحصول على المعاملة باسرع وقت ممكن كما نوفر افضل معقب لتخليص معاملات التجنيس بالسعودية.
+        </p>
+
+        <p>
+          نسعى جاهدين لتحويل رحلة البحث عن مكتب معاملات زواج موثوق إلى تجربةٍ خالية من التعقيدات، حيث نضمن:
+        </p>
+
+        <div class="about-features">
+   <div><i class="fa-solid fa-check"></i> السرعة في إنهاء الإجراءات مع الالتزام الكامل بالأنظمة.</div>
+          
+<div><i class="fa-solid fa-check"></i> الشفافية في تقديم التفاصيل وتوضيح الحقوق والواجبات.</div>
+         
+<div><i class="fa-solid fa-check"></i> الحماية القانونية والاجتماعية لضمان استقرار العلاقة الزوجية.</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="section-tag">خدماتنا</span>
+        <h2>أهم الخدمات التي نقدمها</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <img src="1002244670.webp" alt="">
+          <div class="service-content">
+            <h3>تسهيل وتصاريح الزواج</h3>
+            <p>نقدم خدمات استشارية متكاملة لتسهيل استخراج تصاريح الزواج الرسمية وإتمام المعاملات بمرونة تامة وفق الأنظمة والتعليمات المعمول بها في المملكة العربية السعودية. نتولى مراجعة كافة الشروط المطلوبة، تجهيز الملفات القانونية، والتحقق من اكتمال المستندات عبر المنصات الرقمية المعتمدة لضمان سير المعاملة بسلاسة وبأعلى نسبة قبول، مع تقديم متابعة دقيقة ومستمرة لكافة الإجراءات حتى صدور الموافقة الرسمية.</p>
+          </div>
+        </div>
+
+      
+
+      <div class="service-card">
+          <img src="100224666.webp" alt="">
+          <div class="service-content">
+            <h3>تصريح الزواج من المغرب</h3>
+            <p>نمتلك خبرة طويلة وعميقة في إنهاء وتخليص إجراءات وتصاريح الزواج من جمهورية المغرب الشقيقة للمواطنين بكل يسر وسهولة. نتميز بالمعرفة التامة بكافة المتطلبات القانونية والتوثيقية لدى الجهات المختصة وسفارة المملكة، ونقوم بتوجيهك وتجهيز ملفك بالكامل لتفادي أي تأخير أو رفض، مستندين في ذلك على سجل حافل بالنجاحات وسرعة فائقة في إنهاء الإجراءات الرسمية.</p>
+          </div>
+        </div>
+
+       
+
+    <div class="service-card">
+          <img src="1002244665.webp" alt="">
+          <div class="service-content">
+            <h3>استقدام الأبناء فقط</h3>
+            <p>نساعدك في لم شمل أسرتك من خلال تقديم معاملات استقدام الأبناء فقط وفقاً للأنظمة واللوائح المحدثة لوزارة الخارجية ووزارة الموارد البشرية والتنمية الاجتماعية. نقوم بدرس حالة الطلب، والتأكد من مطابقة المهن والرواتب للشروط، ومتابعة الطلب خطوة بخطوة عبر منصة تأشيرات والجهات ذات العلاقة حتى إصدار تأشيرة الاستقدام وتسهيل وصول أبنائكم إلى أرض المملكة بسلام.</p>
+          </div>
+        </div>
+
+       
+
+ <div class="service-card">
+          <img src="1002244740.jpg" alt="">
+          <div class="service-content">
+            <h3>خطوات إلغاء بلاغ الهروب إلكترونياً وكيفية تصحيح وضع العمالة</h3>
+            <p>من أهم المشكلات ألتي قد تواجه العامل الوافد إلى السعودية هي عمل بلاغ ضده من جهة كفيلة الأمر الذي قد يعرقله في التعامل وإيجاد عمل وغيرها لذلك الحل هو عمل الغاء بلاغ الهروب الذي قدمه الكفيل ضد عاملة بحجة التغيب, ونحن من واجبنا المهني أن نعلمك كيف تقوم بإلغاء البلاغ وفق الطرق القانونية التي يكفلها لك القانون, ونقدم لك أيضاً في مكتبنا نصائح واستشارات قانونية وكل ما يلزمك ليسهل عليك الإلغاء
+
+والأن في هذا لمقال سنوضح لك كيف تقدم إلكترونياً؟ وكيف تقوم بتصحيح وضع العمالة وما هي الخطوات والمستندات المطلوبة ونوضح لك كيفية التعامل مع المعوقات والعقبات التي قد تواجهك فتابع معنا
+
+مكتب ابو محمد من افصل المكاتب المخصصة في الاستشارات القانونية ومعاملات التعقيب بكل دقة تواصل معنا على الارقام التالية.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ORDER FORM -->
+      <div class="order-form" id="order-form">
+
+        <div class="section-title">
+          <span class="section-tag">طلب خدمة</span>
+          <h2>أرسل طلبك مباشرة عبر واتساب</h2>
+        </div>
+
+        <form id="whatsappForm">
+
+          <div class="form-group">
+            <input type="text" id="name" placeholder="الاسم الكامل" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="رقم الجوال" required>
+          </div>
+
+          <div class="form-group">
+            <select id="service" required>
+              <option value="">اختر نوع الخدمة</option>
+              <option>تسهيل وتصاريح الزواج</option>
+              <option>تصريح الزواج من المغرب</option>
+              <option>استقدام الأبناء فقط</option>
+              <option>متابعة بلاغات الهروب</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea id="details" rows="5" placeholder="تفاصيل الطلب"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            إرسال الطلب عبر واتساب
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="section-tag">معرض الصور</span>
+        <h2>بيئة العمل والإنجاز</h2>
+      </div>
+
+      <div class="gallery-grid">
+
+        <img src="1002244739.webp" alt="">
+        <img src="1002244667.webp" alt="">
+        <img src="1002244600.webp" alt="">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners section" id="partners">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="section-tag">شركاء النجاح</span>
+        <h2>منصات وجهات نتعامل معها</h2>
+      </div>
+
+      <div class="partners-grid">
+
+        <div class="partner-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>أبشر</span>
+        </div>
+
+        <div class="partner-box">
+          <i class="fa-solid fa-building"></i>
+          <span>قوى</span>
+        </div>
+
+        <div class="partner-box">
+          <i class="fa-solid fa-globe"></i>
+          <span>وزارة الخارجية</span>
+        </div>
+
+        <div class="partner-box">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <span>وزارة العدل</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+
+    <div class="container footer-container">
+
+      <div class="footer-box">
+        <h3>مكتب أبو محمد</h3>
+        <p>
+          خدمات التعقيب وإنجاز المعاملات الحكومية بأعلى درجات الجودة والاحترافية.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h3>التواصل</h3>
+        <p>📞 +966563259401</p>
+        <p>🕘 يومياً من 9 صباحاً حتى 11 مساءً</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>روابط سريعة</h3>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">المعرض</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © مكتب أبو محمد للتعقيب 2026
+    </div>
+
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/966563259401" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
